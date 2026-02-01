@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-add-phone-column-to-user
+      author: halwynx
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: phone
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: true
